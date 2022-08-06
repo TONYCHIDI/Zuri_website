@@ -249,6 +249,24 @@ html {
 .root1 .css-0 {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.talent-div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.css-isbt42 .flutter-div .css-pq6ysa {
+    display: flex;
+    max-width: fit-content;
+}
+
+.css-isbt42 .flutter-div .css-1x2k38 {
+    display: flex;
+    max-width: fit-content;
 }
 
 .css-1d3bbye {
@@ -298,6 +316,77 @@ html {
     font-size: 1rem;
     line-height: 1.5;
     letter-spacing: 0.00938em;
+}
+
+.css-pjvi1b {
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: row !important;
+    flex-basis: 32.5%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    max-width: 33%;
+}
+
+@media (max-width: 1200px) {
+    .css-pjvi1b {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .css-pjvi1b {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+}
+
+.css-1px0r2z {
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: row !important;
+    flex-basis: 32%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    max-width: 32%;
+}
+
+@media (max-width: 1200px) {
+    .css-1px0r2z {
+        flex-basis: 33%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 33%;
+    }
+}
+
+@media (max-width: 900px) {
+    .css-1px0r2z {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+}
+
+.css-1mz3l3t {
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: row !important;
+}
+
+@media (min-width: 1200px) {
+    .css-1mz3l3t {
+        flex-basis: 16.6667%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 16.6667%;
+    }
 }
 
 .section-head {
@@ -740,6 +829,12 @@ html {
         flex-grow: 0;
         max-width: 100%;
     }
+}
+
+.flutter-div {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
 }
 
 .css-rpybyc {
