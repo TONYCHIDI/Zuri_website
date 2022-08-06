@@ -257,6 +257,16 @@ body {
     margin-left: -16px;
 }
 
+@media screen and (max-width: 1200px) {
+    .root1 .css-isbt42 {
+        display: flex;
+        flex-direction: column !important;
+        margin-top: 16px;
+        width: 100%;
+        margin-left: -16px;
+    }
+}
+
 .root2 .css-isbt42 {
     display: flex;
     flex-direction: row;
