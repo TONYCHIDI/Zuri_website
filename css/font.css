@@ -203,9 +203,9 @@ html {
 .css-117ueya {
     box-sizing: border-box;
     flex-flow: row wrap;
-    margin-top: -24px;
+    margin-top: 24px;
     width: 100%;
-    margin-left: -24px;
+    margin-left: 24px;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -246,6 +246,64 @@ html {
     }
 }
 
+@media (max-width: 600px) {
+    .css-iol86l {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+}
+
+.css-9l3uo3 {
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+}
+
+@media screen and (max-width: 600px) .section2-box {
+    font-size: 28px !important;
+    line-height: 30px !important;
+    margin: auto !important;
+    text-align: inherit;
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) .section2-box {
+    color: #161617 !important;
+    font-family: Graphik !important;
+    font-size: 30px !important;
+    font-style: normal !important;
+    font-weight: 800 !important;
+    line-height: 49px !important;
+    margin: auto !important;
+    text-align: center;
+    width: 80%;
+}
+
+@media screen and (max-width: 1199px) .section2-box {
+    font-size: 30px !important;
+    line-height: 34px !important;
+    text-align: inherit;
+}
+
+@media screen and (max-width: 1199px) .section-head,
+.section2-box {
+    color: #161617 !important;
+    font-family: Graphik !important;
+    font-style: normal !important;
+    font-weight: 800 !important;
+}
+
+@media screen and (max-width: 1199px) .section-head {
+    font-size: 40px !important;
+    line-height: 49px !important;
+    text-align: center;
+}
+
 .root1 .css-0 {
     display: flex;
     flex-direction: column;
@@ -257,16 +315,6 @@ html {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-}
-
-.css-isbt42 .flutter-div .css-pq6ysa {
-    display: flex;
-    max-width: fit-content;
-}
-
-.css-isbt42 .flutter-div .css-1x2k38 {
-    display: flex;
-    max-width: fit-content;
 }
 
 .css-1d3bbye {
@@ -693,6 +741,15 @@ html {
     }
 }
 
+@media (max-width: 600px) {
+    .css-pq7chb {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
+    }
+}
+
 .css-vhrnoc {
     box-sizing: border-box;
     margin: 0px;
@@ -703,7 +760,7 @@ html {
     max-width: 11.6667%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .css-vhrnoc {
         flex-basis: 11.6667%;
         -webkit-box-flex: 0;
@@ -712,12 +769,21 @@ html {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .css-vhrnoc {
         flex-basis: 33.3333%;
         -webkit-box-flex: 0;
         flex-grow: 0;
         max-width: 33.3333%;
+    }
+}
+
+@media (max-width: 600px) {
+    .css-vhrnoc {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
     }
 }
 
@@ -740,6 +806,15 @@ html {
     }
 }
 
+@media (max-width: 600px) {
+    .css-1tz2rc {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
+    }
+}
+
 .css-ew9l28 {
     box-sizing: border-box;
     margin: 0px;
@@ -756,6 +831,15 @@ html {
         -webkit-box-flex: 0;
         flex-grow: 0;
         max-width: 33.3333%;
+    }
+}
+
+@media (max-width: 600px) {
+    .css-ew9l28 {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
     }
 }
 
@@ -778,7 +862,7 @@ html {
     }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
 
     .css-pq6ysa,
     .css-1x2k38 {
@@ -799,13 +883,23 @@ html {
     max-width: 12.5%;
 }
 
-@media (min-width: 900px) {
+@media (max-width: 900px) {
     .css-1x2k38 {
         flex-basis: 33.3333%;
         -webkit-box-flex: 0;
         flex-grow: 0;
         max-width: 33.3333%;
     }
+}
+
+.css-isbt42 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-top: 16px;
+    width: 100%;
+    margin-left: 16px;
 }
 
 .css-p6stuq .css-isbt42 .MuiGrid-item {
@@ -817,6 +911,7 @@ html {
     box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     margin-top: -16px;
     width: 100%;
     margin-left: -16px;
@@ -831,11 +926,11 @@ html {
     }
 }
 
-.flutter-div {
+/* .flutter-div {
     display: flex;
     flex-direction: row !important;
     flex-wrap: wrap !important;
-}
+} */
 
 .css-rpybyc {
     box-sizing: border-box;
@@ -1312,6 +1407,11 @@ html {
     .box4 {
         margin-top: 20px;
     }
+}
+
+.foot-logo {
+    display: flex;
+
 }
 
 .footer-text {
