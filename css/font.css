@@ -46,12 +46,18 @@ html {
     ;
 }
 
+.root {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .css-5poeop {
     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
     flex-shrink: 0;
     position: fixed;
@@ -63,9 +69,19 @@ html {
     color: rgb(255, 255, 255);
 }
 
+@media (max-width: 900px) {
+    .css-5poeop {
+        left: 0px;
+    }
+}
+
 .MuiAppBar-root {
     background-color: #fff !important;
     box-shadow: none !important;
+}
+
+.root3 {
+    max-width: 100%;
 }
 
 .css-191lty2 {
@@ -73,6 +89,7 @@ html {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
+    justify-content: space-between;
     padding-left: 24px;
     padding-right: 24px;
     min-height: 56px;
@@ -81,11 +98,13 @@ html {
 @media (max-width: 900px) {
     .css-191lty2 {
         min-height: 64px;
+        -webkit-box-pack: center;
+        padding: 0px 16px;
     }
 }
 
 .menu-div {
-    margin: auto;
+    margin: 0;
     color: rgb(0, 0, 0);
     display: flex;
     max-width: 100%;
@@ -95,15 +114,31 @@ html {
     align-items: center;
 }
 
+@media (max-width: 900px) {
+    .menu-div {
+        margin: 0;
+        align-items: flex-end;
+        width: 100%;
+    }
+}
+
 .css-0 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 100%;
 }
 
 .menu-ul {
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+    .menu-ul {
+        display: none;
+        visibility: hidden;
+    }
 }
 
 .menu-ul a {
@@ -144,6 +179,15 @@ html {
     color: rgb(25, 118, 210);
 }
 
+@media (max-width: 900px) {
+    .css-1ujsas3 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px;
+    }
+}
+
 .is-current {
     border-bottom: 3px solid #e7332b !important;
     border-radius: 0 !important;
@@ -170,18 +214,14 @@ html {
     padding: 11px 35px !important;
 }
 
-.button1 {
-    background-color: #e7332b !important;
-    border-radius: 0 0 8px 0 !important;
-    color: #fff !important;
-    font-family: Graphik !important;
-    font-size: 16px !important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    line-height: 19px !important;
-    margin-right: 15px !important;
-    padding: 11px 50px !important;
-    text-transform: none !important;
+@media (max-width: 900px) {
+    .but {
+        padding: 0px !important;
+    }
+
+    .but2 {
+        margin-right: 0 !important;
+    }
 }
 
 .rot {
@@ -200,6 +240,13 @@ html {
     margin: auto !important;
 }
 
+@media screen and (max-width: 600px) {
+    .root1 {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .css-117ueya {
     box-sizing: border-box;
     flex-flow: row wrap;
@@ -215,6 +262,18 @@ html {
 .css-117ueya .MuiGrid-item {
     padding-left: 24px;
     padding-top: 24px;
+}
+
+@media screen and (max-width: 600px) {
+.css-117ueya {
+        margin-left: 0px;
+    }
+
+
+    .css-117ueya .MuiGrid-item {
+        padding-left: 0px;
+        padding-top: 24px;
+    }
 }
 
 .css-iol86l {
@@ -262,46 +321,6 @@ html {
     font-size: 1rem;
     line-height: 1.5;
     letter-spacing: 0.00938em;
-}
-
-@media screen and (max-width: 600px) .section2-box {
-    font-size: 28px !important;
-    line-height: 30px !important;
-    margin: auto !important;
-    text-align: inherit;
-    width: 100%;
-}
-
-@media screen and (max-width: 900px) .section2-box {
-    color: #161617 !important;
-    font-family: Graphik !important;
-    font-size: 30px !important;
-    font-style: normal !important;
-    font-weight: 800 !important;
-    line-height: 49px !important;
-    margin: auto !important;
-    text-align: center;
-    width: 80%;
-}
-
-@media screen and (max-width: 1199px) .section2-box {
-    font-size: 30px !important;
-    line-height: 34px !important;
-    text-align: inherit;
-}
-
-@media screen and (max-width: 1199px) .section-head,
-.section2-box {
-    color: #161617 !important;
-    font-family: Graphik !important;
-    font-style: normal !important;
-    font-weight: 800 !important;
-}
-
-@media screen and (max-width: 1199px) .section-head {
-    font-size: 40px !important;
-    line-height: 49px !important;
-    text-align: center;
 }
 
 .root1 .css-0 {
