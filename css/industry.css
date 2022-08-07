@@ -1020,6 +1020,13 @@ body {
     flex-flow: row nowrap;
 }
 
+@media screen and (max-width: 1200px) {
+    .main5-sub {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+}
+
 .main5wrap {
     display: flex;
     flex-flow: row wrap;
@@ -1028,15 +1035,18 @@ body {
     margin-left: -24px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .main5wrap {
         display: flex;
-        flex-direction: row;
-        -ms-flex-order: 2;
+        flex-flow: row wrap;
         margin-top: -24px;
         width: 100%;
         margin-left: -24px;
     }
+
+        .main5-img {
+            min-width: 100%;
+        }
 }
 
 .css-15sg80i {
@@ -1059,7 +1069,7 @@ body {
 }
 
 .main5-img {
-    width: 90%;
+    width: 100%;
 }
 
 .main5box {
@@ -1585,12 +1595,21 @@ body {
     max-width: 50%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .css-1vh5myd {
         flex-basis: 25%;
         -webkit-box-flex: 0;
         flex-grow: 0;
         max-width: 25%;
+    }
+}
+
+@media (max-width: 900px) {
+    .css-1vh5myd {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
     }
 }
 
@@ -1738,10 +1757,10 @@ body {
 
 @media (max-width: 900px) {
     .css-c40sdo {
-        flex-basis: 58.3333%;
+        flex-basis: 100%;
         -webkit-box-flex: 0;
         flex-grow: 0;
-        max-width: 58.3333%;
+        max-width: 100%;
     }
 }
 
