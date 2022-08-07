@@ -371,15 +371,6 @@ html {
     }
 }
 
-.css-9l3uo3 {
-    margin: 0px;
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5;
-    letter-spacing: 0.00938em;
-}
-
 .root1 .css-isbt42 .css-pjvi1b,
 .root1 .css-isbt42 .css-1px0r2z {
     padding-left: 16px;
@@ -879,18 +870,27 @@ html {
         flex-basis: 33.3333%;
         -webkit-box-flex: 0;
         flex-grow: 0;
-        max-width: 33.3333%;
+        max-width: 33.3333%;min-width: 33.3333%;
     }
 }
 
 @media (max-width: 600px) {
+    .css-pq6ysa {
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 50%;
+        min-width: 50%;
+        }
+}
 
-    .css-pq6ysa,
+@media (max-width: 600px) {
     .css-1x2k38 {
         flex-basis: 50%;
         -webkit-box-flex: 0;
         flex-grow: 0;
         max-width: 50%;
+        min-width: 50%;
     }
 }
 
@@ -919,7 +919,7 @@ html {
     justify-content: center;
     flex-flow: row wrap;
     margin-top: 16px;
-    width: 100%;
+    width: calc(100% + 16px);
     margin-left: 16px;
 }
 
@@ -939,6 +939,7 @@ html {
     margin-top: -16px;
     width: 100%;
     margin-left: -16px;
+    margin-right: 24px;
 }
 
 @media (max-width: 900px) {
@@ -950,12 +951,6 @@ html {
     }
 }
 
-/* .flutter-div {
-    display: flex;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-} */
-
 .css-rpybyc {
     box-sizing: border-box;
     margin: 0px;
@@ -964,7 +959,6 @@ html {
     -webkit-box-flex: 0;
     flex-grow: 0;
     max-width: 50%;
-
 }
 
 .image2 {
