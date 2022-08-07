@@ -57,7 +57,7 @@ html {
     box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    width: 100%;
     box-sizing: border-box;
     flex-shrink: 0;
     position: fixed;
@@ -69,19 +69,9 @@ html {
     color: rgb(255, 255, 255);
 }
 
-@media (max-width: 900px) {
-    .css-5poeop {
-        left: 0px;
-    }
-}
-
 .MuiAppBar-root {
     background-color: #fff !important;
     box-shadow: none !important;
-}
-
-.root3 {
-    max-width: 100%;
 }
 
 .css-191lty2 {
@@ -104,10 +94,10 @@ html {
 }
 
 .menu-div {
-    margin: 0;
+    margin: auto;
     color: rgb(0, 0, 0);
     display: flex;
-    max-width: 100%;
+    max-width: 1440px;
     width: 88%;
     justify-content: space-between;
     height: 40px;
@@ -116,10 +106,11 @@ html {
 
 @media (max-width: 900px) {
     .menu-div {
-        margin: 0;
-        align-items: flex-end;
+        margin: 16px;
+        align-items: center;
         width: 100%;
     }
+
 }
 
 .css-0 {
@@ -179,12 +170,16 @@ html {
     color: rgb(25, 118, 210);
 }
 
+.btn-div {
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width: 900px) {
     .css-1ujsas3 {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 0px;
     }
 }
 
@@ -264,8 +259,8 @@ html {
     padding-top: 24px;
 }
 
-@media screen and (max-width: 600px) {
-.css-117ueya {
+@media screen and (max-width: 900px) {
+    .css-117ueya {
         margin-left: 0px;
     }
 
@@ -385,14 +380,20 @@ html {
     letter-spacing: 0.00938em;
 }
 
+.root1 .css-isbt42 .css-pjvi1b,
+.root1 .css-isbt42 .css-1px0r2z {
+    padding-left: 16px;
+    padding-top: 16px;
+}
+
 .css-pjvi1b {
     box-sizing: border-box;
     margin: 0px;
     flex-direction: row !important;
-    flex-basis: 32.5%;
+    flex-basis: 33.3333%;
     -webkit-box-flex: 0;
     flex-grow: 0;
-    max-width: 33%;
+    max-width: 33.3333%;
 }
 
 @media (max-width: 1200px) {
@@ -404,7 +405,7 @@ html {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     .css-pjvi1b {
         flex-basis: 100%;
         -webkit-box-flex: 0;
@@ -638,14 +639,14 @@ html {
     box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;
-    margin-top: -24px;
+    margin-top: -16px;
     width: 100%;
-    margin-left: -24px;
+    margin-left: -16px;
 }
 
 .css-1h77wgb .MuiGrid-item {
     padding-top: 24px;
-    padding-left: 24px;
+    padding-left: 16px;
 }
 
 .css-186lflp {
@@ -729,6 +730,7 @@ html {
         -webkit-box-flex: 0;
         flex-grow: 0;
         max-width: 100%;
+        margin: auto;
     }
 }
 
@@ -922,8 +924,11 @@ html {
 }
 
 .css-p6stuq .css-isbt42 .MuiGrid-item {
-    padding-left: 16px;
     padding-top: 16px;
+}
+
+#section-3 .css-isbt42 {
+    margin-left: 0px;
 }
 
 .css-p6stuq .css-isbt42 {
@@ -1214,7 +1219,7 @@ html {
     color: #FFFFFF !important;
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 900px) {
     .button1 {
         background-color: #E7332B !important;
         text-transform: none !important;
@@ -1227,6 +1232,10 @@ html {
         font-size: 16px !important;
         line-height: 19px !important;
         color: #FFFFFF !important;
+    }
+
+    .btn-div .button1 {
+        margin-right: 0px !important;
     }
 }
 
@@ -1430,7 +1439,16 @@ html {
 
 .foot-logo {
     display: flex;
+}
 
+@media screen and (max-width: 600px) {
+    .foot-logo {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        width: 100%;
+    }
 }
 
 .footer-text {
@@ -1494,6 +1512,7 @@ html {
 @media screen and (max-width: 600px) {
     .footer-img {
         justify-content: center;
+        margin-top: 16px;
     }
 }
 
